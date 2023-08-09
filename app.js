@@ -5,23 +5,28 @@ const express = require('express');
 
 const app = express();
 
+app.set('views', path.join(__dirname, 'views')); /*permet de pointer le dossier dans lequel se trouve les fichiers ejs*/
+app.set('view engine', 'ejs'); /*permet d utiliser ejs*/
 
 app.use(express.static('public')); /*crée un middleware pour dire d utiliser les fichiers statics du dossier public en premier quand il y a un lien vers un fichier*/
 app.use(express.urlencoded({ extended: false })); /*permet de look incoming request and extract incoming data*/
 
 app.get('/', function (req, res) {
-    const htmlFilePath = path.join(__dirname, 'views', 'index.html');
-    res.sendFile(htmlFilePath);
+    res.render('index'); /*renvoie fichier ejs et le transfomre en html pour que le browser puisse le lire*/
+    //  = const htmlFilePath = path.join(__dirname, 'views', 'index.html');
+    //    res.sendFile(htmlFilePath);
 });
 
 app.get('/restaurants', function (req, res) {
-    const htmlFilePath = path.join(__dirname, 'views', 'restaurants.html');
-    res.sendFile(htmlFilePath);
+    res.render('restaurants');
+    // const htmlFilePath = path.join(__dirname, 'views', 'restaurants.html');
+    // res.sendFile(htmlFilePath);
 });
 
 app.get('/recommend', function (req, res) {
-    const htmlFilePath = path.join(__dirname, 'views', 'recommend.html');
-    res.sendFile(htmlFilePath);
+    res.render('recommend');
+    // const htmlFilePath = path.join(__dirname, 'views', 'recommend.html');
+    // res.sendFile(htmlFilePath);
 });
 
 app.post('/recommend', function (req, res) {
@@ -37,13 +42,15 @@ app.post('/recommend', function (req, res) {
 });
 
 app.get('/confirm', function (req, res) {
-    const htmlFilePath = path.join(__dirname, 'views', 'confirm.html');
-    res.sendFile(htmlFilePath);
+   res.render('confirm');
+    // const htmlFilePath = path.join(__dirname, 'views', 'confirm.html');
+    // res.sendFile(htmlFilePath);
 });
 
 app.get('/about', function (req, res) {
-    const htmlFilePath = path.join(__dirname, 'views', 'about.html');
-    res.sendFile(htmlFilePath);
+    res.render('about');
+    // const htmlFilePath = path.join(__dirname, 'views', 'about.html');
+    // res.sendFile(htmlFilePath);
 });
 
 app.listen(3000);
