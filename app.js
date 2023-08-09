@@ -18,7 +18,10 @@ app.get('/', function (req, res) {
 });
 
 app.get('/restaurants', function (req, res) {
-    res.render('restaurants');
+    const filePath = path.join(__dirname, 'data', 'restaurants.json'); /*pour les enregistrer vers fichier json*/
+    const fileData = fs.readFileSync(filePath); /*lit les data pour les transfomer en objet js*/
+    const storedRestaurants = JSON.parse(fileData); /*transforme en texte*/
+    res.render('restaurants',{ numberOfRestaurants: storedRestaurants.length, restaurants: storedRestaurants });
     // const htmlFilePath = path.join(__dirname, 'views', 'restaurants.html');
     // res.sendFile(htmlFilePath);
 });

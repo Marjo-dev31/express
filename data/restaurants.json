@@ -40,5 +40,12 @@
         "cuisine": "rich",
         "website": "https://www.impots.gouv.fr",
         "description": "great"
+    },
+    {
+        "name": "myrestaurant",
+        "address": "inmycity",
+        "cuisine": "francaise",
+        "website": "http://www.mytest.com",
+        "description": "awesome of course"
     }
 ]
