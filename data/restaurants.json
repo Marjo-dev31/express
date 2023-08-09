@@ -1,51 +1,49 @@
-[
-    {
-        "name": "test1",
-        "address": "test a montespan",
-        "cuisine": "tradition",
-        "website": "http://www.mytest.com",
-        "description": "perfect"
-    },
-    {
-        "name": "my",
-        "address": "restaurant",
-        "cuisine": "italien",
-        "website": "https://www.impots.gouv.fr",
-        "description": "awesome"
-    },
-    {
-        "name": "test2",
-        "address": "test2",
-        "cuisine": "mexic",
-        "website": "https://www.impots.gouv.fr",
-        "description": "ok"
-    },
-    {
-        "name": "test",
-        "address": "test adress montespan",
-        "cuisine": "italien",
-        "website": "https://www.impots.gouv.fr/particulier/questions/je-mange-le-midi-au-restaurant-je-nai-pas-garde-les-justificatifs-que-puis-je",
-        "description": "(-è-è"
-    },
-    {
-        "name": "test",
-        "address": "test adress montespan",
-        "cuisine": "italien",
-        "website": "https://www.impots.gouv.fr",
-        "description": "frtrt"
-    },
-    {
-        "name": "mytest",
-        "address": "is",
-        "cuisine": "rich",
-        "website": "https://www.impots.gouv.fr",
-        "description": "great"
-    },
-    {
-        "name": "myrestaurant",
-        "address": "inmycity",
-        "cuisine": "francaise",
-        "website": "http://www.mytest.com",
-        "description": "awesome of course"
-    }
-]
+[    {
+    "name": "test1",
+    "address": "test a montespan",
+    "cuisine": "tradition",
+    "website": "http://www.mytest.com",
+    "description": "perfect"
+},
+{
+    "name": "my",
+    "address": "restaurant",
+    "cuisine": "italien",
+    "website": "https://www.impots.gouv.fr",
+    "description": "awesome"
+},
+{
+    "name": "test2",
+    "address": "test2",
+    "cuisine": "mexic",
+    "website": "https://www.impots.gouv.fr",
+    "description": "ok"
+},
+{
+    "name": "test",
+    "address": "test adress montespan",
+    "cuisine": "italien",
+    "website": "https://www.impots.gouv.fr/particulier/questions/je-mange-le-midi-au-restaurant-je-nai-pas-garde-les-justificatifs-que-puis-je",
+    "description": "(-è-è"
+},
+{
+    "name": "test",
+    "address": "test adress montespan",
+    "cuisine": "italien",
+    "website": "https://www.impots.gouv.fr",
+    "description": "frtrt"
+},
+{
+    "name": "mytest",
+    "address": "is",
+    "cuisine": "rich",
+    "website": "https://www.impots.gouv.fr",
+    "description": "great"
+},
+{
+    "name": "myrestaurant",
+    "address": "inmycity",
+    "cuisine": "francaise",
+    "website": "http://www.mytest.com",
+    "description": "awesome of course"
+}]
